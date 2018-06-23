@@ -1,0 +1,10 @@
+html {
+    background-color: cornsilk;
+}
+
+* {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
