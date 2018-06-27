@@ -1,6 +1,6 @@
 //Right button
 const App = {
-    box: "red",
+    box: ["red", "green", "blue"],
     init() {
         this.cacheDom();
         this.bindEventListeners();
@@ -9,7 +9,7 @@ const App = {
 
     cacheDom() {
         this.root = document.querySelector('#App');
-        this.rightBtn = this.root.querySelector('.rightBtn');
+        this.rightBtn = this.root.querySelector('.rightB');
         this.box = this.root.querySelector('.box');
     },
 
@@ -18,14 +18,14 @@ const App = {
     },
 
     rightClick() {
-        /*this.rightClick = function () {
+        this.rightClick = function () {
             for(let c = 0; c < RtCycle.length; c+=1);
                 const RtCycle = ["green", "blue", "red"];
                 bg = this.RtCycle.shift();
                 RtCycle.push(bg);
                 this.render();
         };
-        */
+
     },
 
     render() {

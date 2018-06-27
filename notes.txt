@@ -1,3 +1,8 @@
 1. What was easier than expected
 2. What was challenging and how it was overcome
 3. What would I change, if anything?
+
+CHANGES
+    1. FIX THE BUTTON NAMING ERROR
+  
+  $ rm -rf node_modules/
