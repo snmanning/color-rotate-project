@@ -16,7 +16,6 @@ title {
 .box {
     width: 300px;
     height: 200px;
-    background-color: red;
     position: fixed;
     top: 37%;
     left: 50%;
@@ -37,4 +36,16 @@ title {
     margin: 50px;
     font-size: xx-large;
     cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
 }

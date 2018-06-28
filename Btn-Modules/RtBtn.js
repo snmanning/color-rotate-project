@@ -1,6 +1,8 @@
 //Right button
 const App = {
+
     box: ["red", "green", "blue"],
+
     init() {
         this.cacheDom();
         this.bindEventListeners();
@@ -18,27 +20,27 @@ const App = {
     },
 
     rightClick() {
-        this.rightClick = function () {
-            for(let c = 0; c < RtCycle.length; c+=1);
-                const RtCycle = ["green", "blue", "red"];
-                bg = this.RtCycle.shift();
-                RtCycle.push(bg);
+        this.rightClick = function (box) {
+            for(let c = 0; c < box.length; c+=1);
+                bg = this.box.shift();
+                box.push(bg);
                 this.render();
         };
 
     },
 
     render() {
-        this.style.backgroundColor = this.rightClick;
+        this.;
     },
 };
 
-//cycle of bckground colors for the box when the right button is clicked
+App.init();
+window.App = App;
 
+//cycle of bckground colors for the box when the right button is clicked
 
 //function rgb () {
     
-
    /* box.onclick = function () {
         color = colors.shift();
         colors.push(color);
@@ -46,6 +48,3 @@ const App = {
         box.style.backgroundColor = color;
 };
 */
-
-App.init();
-window.App = App;
