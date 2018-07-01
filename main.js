@@ -1,7 +1,7 @@
 //Right button
 const App = {
 
-    box: ["green", "blue", "red"],
+    colors: ["green", "blue", "red"],
 
     init() {
         this.cacheDom();
@@ -12,7 +12,7 @@ const App = {
     cacheDom() {
         this.root = document.querySelector('#App');
         this.rightB = this.root.querySelector('.rightB');
-        this.legtB = this.root.querySelector('leftB');
+        this.leftB = this.root.querySelector('.leftB');
         this.box = this.root.querySelector('.box');
     },
 
@@ -22,37 +22,20 @@ const App = {
     },
 
     rightClick() {
-        this.rightClick = function () {
-            for(let c = 0; c < box.length; c+=1);
-                bg = this.box.splice(0);
-                bg.push();
-                this.render();
-
-            //
-        };
-
+        const last = this.colors[this.colors.length-1];
+        const begin = this.colors.slice(0, this.colors.length-1);
+        this.colors = [last, ...begin];
     },
 
 leftClick() {
-
+        const [first, ...rest] = this.colors;
+        this.colors = [...rest, first];
 },
 
     render() {
-        this.box.;
+       
     },
 };
 
 App.init();
 window.App = App;
-
-//cycle of bckground colors for the box when the right button is clicked
-
-//function rgb () {
-    
-   /* box.onclick = function () {
-        color = colors.shift();
-        colors.push(color);
-    
-        box.style.backgroundColor = color;
-};
-*/
