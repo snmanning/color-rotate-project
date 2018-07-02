@@ -2,7 +2,7 @@
 const App = {
 
     colors: ["green", "blue", "red"],
-
+    
     init() {
         this.cacheDom();
         this.bindEventListeners();
@@ -25,15 +25,17 @@ const App = {
         const last = this.colors[this.colors.length-1];
         const begin = this.colors.slice(0, this.colors.length-1);
         this.colors = [last, ...begin];
+        this.render();
     },
 
-leftClick() {
+    leftClick() {
         const [first, ...rest] = this.colors;
         this.colors = [...rest, first];
+        this.render();
 },
 
     render() {
-       
+       this.box.style.backgroundColor = this.colors[0];
     },
 };
 
